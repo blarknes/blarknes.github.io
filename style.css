@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-
 *{
   padding: 0px;
   margin: 0px;
@@ -10,264 +5,33 @@
   font-family: "Times New Roman", sans-serif;
   color: #aaa;
 }
-html, body{
+
+html, body, #main_div{
   height: 100%;
   width: 100%;
   background-color: #181818;
 }
-header{
-  height: 100%;
-  width: 100%;
-  margin: 0px auto;
-  color: #aaa;
+
+#main_div, .upper_inner_div, .lower_inner_div{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header p, header span{
-  font-size: 80px;
-  font-family: 'Monoton', cursive;
-  font-weight: lighter;
-  color: #00C6C6;
-}
-a{
-  text-decoration: none;
-  color: #008080;
+
+#main_div {
+  flex-flow: wrap;
 }
 
-#jt{
-  z-index: 2;
-  width: 100%;
-  text-align: center;
-  font-size: 80px;
-  color: #00C6C6;
-  text-shadow: 0 0 200px #ffffff,0 0 80px #00C6C6,0 0 6px #000fff;
-  font-family: 'Monoton', cursive;
-  text-transform: uppercase;
-}
-
-#jt:hover {
-  text-shadow: 0 0 200px #ffffff,0 0 80px #00C6C6,0 0 6px #000fff;
-}
-#jt span:nth-of-type(1){
-  opacity: .4;
-}
-#jt span:nth-of-type(2){
-  -webkit-animation: upper 11s linear infinite;
-  -moz-animation: upper 11s linear infinite;
-  -o-animation: upper 11s linear infinite;
-  animation: upper 11s linear infinite;
-}
-#jt span:nth-of-type(3){
-  -webkit-animation: upper 6s linear infinite 2s;
-  -moz-animation: upper 6s linear infinite 2s;
-  -o-animation: upper 6s linear infinite 2s;
-  animation: upper 6s linear infinite 2s;
-}
-#jt span:nth-of-type(4){
-  -webkit-animation: upper 13s linear infinite 1s;
-  -moz-animation: upper 13s linear infinite 1s;
-  -o-animation: upper 13s linear infinite 1s;
-  animation: upper 13s linear infinite 1s;
-}
-
-
-.first_box{
-  border-top: 2px solid #008080;
-  height: 500px;
-  width: 100%;
-  background-color: #212121;
-}
-.first_box .inner{
-  width: 40%;
-  margin-left: 15%;
-  text-align: center;
-}
-h2{
-  padding: 15px 0px;
-  width: 100%;
-  text-decoration: underline;
-  text-align: center;
-}
-#vilas{
-  color: #008080;
-}
-
-
-.second_box{
-  border-top: 2px solid #008080;
-  height: 500px;
+.upper_inner_div, .lower_inner_div{
+  height: 50%;
   width: 100%;
 }
-.second_box .inner{
-  margin-right: 15%;
-  margin-left: auto;
-  width: 40%;
-  text-align: center;
-}
-th:nth-of-type(1){
-  color: #008080;
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 70%;
-  margin: 0px auto;
-}
-td, th {
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #262626;
-  border-top: 1px solid #008080;
-  border-bottom: 1px solid #008080;
-}
-.b{
-  text-align: right;
-}
 
-
-.third_box{
-  border-top: 2px solid #008080;
-  height: 500px;
-  width: 100%;
-  background-color: #212121;
-}
-.third_box .inner{
-  width: 40%;
-  margin-left: 15%;
-  text-align: center;
-  height: 10%;
-}
-.third_box .downinner{
-  width: 40%;
-  margin-left: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 80%;
-}
-.third_box .downinner img{
-  width: 130px;
-  height: 130px;
-}
-#gmail:hover{
-  cursor: pointer;
-}
-
-
-.fourth_box{
-  border-top: 2px solid #008080;
-  height: 500px;
-  width: 100%;
-}
-.fourth_box .inner{
-  width: 40%;
-  margin-left: auto;
-  margin-right: 15%;
-}
-.fourth_box .inner p{
-  text-align: center;
-}
-.fourth_box .downinner{
-  width: 60%;
-  margin: 0px auto;
-}
-.fourth_box .downinner ul ul{
-  padding-left: 20px;
-}
-
-
-.fifth_box{
-  border-top: 2px solid #008080;
-  height: 500px;
-  width: 100%;
-  background-color: #212121;
-}
-.fifth_box .inner{
-  width: 40%;
-  margin-left: 15%;
-}
-.fifth_box p{
-  text-align: center;
-}
-.fifth_box .downinner{
-  margin-left: 10%;
-  width: 60%;
-  margin: 0px auto;
-  display: flex;
-}
-.fifth_box .downinner ul ul{
-  padding-left: 20px;
-}
-.left, .right{
-  width: 50%;
-}
-
-
-.last_box{
-  border-top: 2px solid #008080;
+.placeholder{
+  z-index: 4;
   height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-.last_box p{
-  font-size: 60px;
-  text-align: center;
-  color: #008080;
-}
-.last_box span{
-  color: #181818;
-  text-shadow: 0px 0px 3px #008080;
-}
-.last_box p span:nth-of-type(1){
-  font-family: 'Berkshire Swash', cursive;
-}
-.last_box p span:nth-of-type(2){
-  font-family: 'Schoolbell', cursive;
-}
-
-
-span.padline{
-  display: inline-block;
-}
-.padline{
-  margin-top: 15px;
-}
-
-@keyframes upper {
-  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
-    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #00B2FF,0 0 6px #0000ff;
-  }
-  20%,21.999%,63%,63.999%,65%,69.999% {
-    opacity:0.4; text-shadow: none;
-  }
-}
-@-webkit-keyframes upper{
-  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
-    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #00B2FF,0 0 6px #0000ff;
-  }
-  20%,21.999%,63%,63.999%,65%,69.999% {
-    opacity:0.4; text-shadow: none;
-  }
-}
-@-moz-keyframes upper{
-  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
-    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #00B2FF,0 0 6px #0000ff;
-  }
-  20%,21.999%,63%,63.999%,65%,69.999% {
-    opacity:0.4; text-shadow: none;
-  }
-}
-@-o-keyframes upper{
-  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
-    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #00B2FF,0 0 6px #0000ff;
-  }
-  20%,21.999%,63%,63.999%,65%,69.999% {
-    opacity:0.4; text-shadow: none;
-  }
+  background-image: url("porra mano ai é foda.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
