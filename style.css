@@ -9,7 +9,8 @@
 html, body, #main_div{
   height: 100%;
   width: 100%;
-  background-color: #181818;
+  /*background-color: #181818;*/
+  background-color: white;
 }
 
 #main_div, .upper_inner_div, .lower_inner_div{
@@ -30,8 +31,6 @@ html, body, #main_div{
 .placeholder{
   z-index: 4;
   height: 100%;
-  background-image: url("porra mano ai é foda.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("porra mano ai é foda.png") no-repeat center fixed;
+  background-size: contain;
 }
