@@ -32,11 +32,14 @@ html, body, #main_div {
   height: 100%;
   background: url("porra mano ai é foda.png") no-repeat center fixed;
   background-size: contain;
-  position: relative;
 }
 
 .nothing {
   height: 300%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 
