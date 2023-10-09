@@ -1,0 +1,136 @@
+@use 'variables';
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+/* Reseting SCSS */
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form,
+label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header,
+nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+  color: variables.$text-color-1;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+footer, header, nav, section, main {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input {
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Global styles */
+html {
+  background-color: variables.$background-color;
+}
+h1, h2, p, a, span, button {
+  font-family: 'Poppins', sans-serif;
+}
+a, i {
+  cursor: pointer;
+  &:hover {
+    color: variables.$text-color-2;
+  }
+}
+a {
+  text-decoration: underline variables.$text-color-2-transparent;
+  &:hover {
+    text-decoration-color: variables.$text-color-2;
+  }
+}
+
+/* Global logic selectors */
+i, img, section > span {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+::-moz-selection {
+  background: variables.$text-color-4;
+}
+::selection {
+  background: variables.$text-color-4;
+}
+
+/* Hiding scrollbar */
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Text Styles */
+.thin {
+  font-weight: 100;
+}
+.bold {
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.emphasis {
+  background-color: variables.$text-color-2;
+  &::-moz-selection {
+    background-color: variables.$text-color-3;
+    color: variables.$background-color;
+  }
+  &::selection {
+    background-color: variables.$text-color-3;
+    color: variables.$background-color;
+  }
+}
+.accent {
+  color: variables.$text-color-3;
+  &::-moz-selection {
+    background-color: variables.$text-color-3;
+    color: variables.$text-color-2;
+  }
+  &::selection {
+    background-color: variables.$text-color-3;
+    color: variables.$text-color-2;
+  }
+}
