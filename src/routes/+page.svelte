@@ -77,10 +77,10 @@
   }
   h2 {
     width: fit-content;
-    padding-right: 4px;
     border-right: 2px solid;
-    animation: blink 0.7s infinite;
-    line-height: 1.1;
+    font-family: 'Noto Sans JP', sans-serif;
+    animation: blink 0.6s infinite;
+    line-height: 1;
   }
 
   @keyframes blink {
