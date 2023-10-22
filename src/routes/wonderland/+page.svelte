@@ -2,6 +2,7 @@
   import { load_lazily } from '$actions';
   import { base } from '$app/paths';
   import { white_rabbit_large, white_rabbit_small } from '$assets';
+  import FaHome from 'svelte-icons/fa/FaHome.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 </svelte:head>
 
 <nav>
-  <a href={base + '/'}>homepage</a>
+  <a href={base + '/'}><FaHome /></a>
 </nav>
 
 <article>
@@ -31,11 +32,18 @@
 
 <style lang='scss'>
   nav {
-    height: 24vh;
+    display: flex;
+    * {
+      height: 26px;
+    }
   }
   article {
-    height: 38vh;
-    font-size: calc(0.8vw + 1.7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 7vh;
+    font-size: calc(.8vw + 1.2rem);
     p, span {
       font-family: 'Noto Sans JP', sans-serif;
     }
@@ -43,7 +51,7 @@
   picture {
     display: flex;
     width: fit-content;
-    height: 20vh;
+    height: 15vh;
     img {
       height: 100%;
     }

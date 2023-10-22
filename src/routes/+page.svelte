@@ -2,15 +2,24 @@
   import { sleep } from '$actions';
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
+  import FaCat from 'svelte-icons/fa/FaCat.svelte';
   import FaCube from 'svelte-icons/fa/FaCube.svelte';
   import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
   import FaLinkedinIn from 'svelte-icons/fa/FaLinkedinIn.svelte';
   import IoIosCloudOutline from 'svelte-icons/io/IoIosCloudOutline.svelte';
 
-  const DESCRIPTIONS = [ 'I am a developer', 'I am nonchalant', 'I am a hacker', 'I am a lover', 'I am me' ];
+  const DESCRIPTIONS = [
+    'a developer',
+    'nonchalant',
+    'a hacker',
+    'a lover',
+    'me'
+  ];
   let description = DESCRIPTIONS[0];
 
-  $: description;
+  $: {
+    description = "I am " + description;
+  };
 
   const typewriter = async () => {
     while (true) {
@@ -41,7 +50,7 @@
 </svelte:head>
 
 <nav>
-  <a href={base + '/wonderland'}>wonderland</a>
+  <a href={base + '/wonderland'}><FaCat /></a>
 </nav>
 
 <main>
@@ -57,30 +66,30 @@
 </footer>
 
 <style lang='scss'>
-  nav {
-    height: 32vh;
-  }
   main {
-    height: 46vh;
-  }
-  footer {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+  }
+  nav, footer {
+    display: flex;
     gap: 12px;
     * {
       height: 26px;
     }
   }
   h1 {
-    font-size: calc(0.8vw + 1.7rem);
+    font-size: calc(.8vw + 1.7rem);
     font-weight: bold;
   }
   h2 {
     width: fit-content;
+    padding-right: 4px;
     border-right: 2px solid;
     font-family: 'Noto Sans JP', sans-serif;
-    animation: blink 0.6s infinite;
-    line-height: 1;
+    animation: blink .8s infinite;
+    line-height: 1.1;
   }
 
   @keyframes blink {
