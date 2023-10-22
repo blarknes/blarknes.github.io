@@ -34,7 +34,7 @@
     }
   }
   p {
-    text-align: right;
     margin-top: 1vh;
+    text-align: right;
   }
 </style>
