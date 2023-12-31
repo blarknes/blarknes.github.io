@@ -3,26 +3,36 @@
   import { background_large, background_small } from '$assets';
 </script>
 
-{#await load_lazily(background_large)}
-  <picture>
-    <img src={background_small} alt='background' />
-  </picture>
-{:then loaded}
-  <picture>
-    <img src={loaded} alt='background' />
-  </picture>
-{/await}
+<main>
+  {#await load_lazily(background_large)}
+    <picture>
+      <img src={background_small} alt='background' />
+    </picture>
+  {:then loaded}
+    <picture>
+      <img src={loaded} alt='background' />
+    </picture>
+  {/await}
+</main>
 
 <style lang='scss'>
-  picture {
+  main {
     display: flex;
-    justify-content: center;
     position: absolute;
+    justify-content: end;
+    align-items: end;
     top: 0;
     z-index: -1;
     width: 100vw;
-    height: 90vh;
-    scale: 1;
+    height: 100vh;
     overflow: hidden;
+  }
+  picture {
+    width: fit-content;
+    height: 65vw;
+    max-height: 70vh;
+    img {
+      height: 100%;
+    }
   }
 </style>

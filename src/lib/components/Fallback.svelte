@@ -18,8 +18,10 @@
   main {
     display: flex;
     justify-content: center;
-    width: 76vw;
-    margin-top: 40vh;
+    margin-top: 30vh;
+  }
+  section {
+    max-width: 70vw;
   }
   h1, h2 {
     text-align: center;

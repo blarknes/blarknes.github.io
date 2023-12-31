@@ -13,7 +13,7 @@
 
 <style>
   main {
-    margin: 8vh 0 0 12vw;
+    margin: 8vh 0;
     font-size: 1.3em;
   }
 </style>

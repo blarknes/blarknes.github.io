@@ -9,16 +9,16 @@
   import IoIosCloudOutline from 'svelte-icons/io/IoIosCloudOutline.svelte';
 
   const DESCRIPTIONS = [
-    'a developer',
-    'nonchalant',
-    'a hacker',
-    'a lover',
-    'me'
+    ' a developer',
+    ' nonchalant',
+    ' a hacker',
+    ' a lover',
+    ' me'
   ];
   let description = DESCRIPTIONS[0];
 
   $: {
-    description = "I am " + description;
+    description = "I am" + description;
   };
 
   const typewriter = async () => {
@@ -32,13 +32,16 @@
         }
         await sleep(500);
 
+        if (i == DESCRIPTIONS.length - 1) {
+          await sleep(1000);
+        }
+
         for (let pos = current.length; pos >= 0; pos--) {
           await sleep(100);
           description = current.slice(0, pos);
         }
         await sleep(500);
       }
-      await sleep(1000);
     }
   }
 
@@ -50,7 +53,11 @@
 </svelte:head>
 
 <nav>
+  <a href='https://www.linkedin.com/in/blarknes' target='_blank'><FaLinkedinIn /></a>
+  <a href='https://github.com/blarknes' target='_blank'><FaGithub /></a>
   <a href={base + '/wonderland'}><FaCat /></a>
+  <a href='https://app.hackthebox.com/profile/1419398' target='_blank'><FaCube /></a>
+  <a href='https://tryhackme.com/p/blarknes' target='_blank'><IoIosCloudOutline /></a>
 </nav>
 
 <main>
@@ -58,26 +65,21 @@
   <h2>{description}&ZeroWidthSpace;</h2>
 </main>
 
-<footer>
-  <a href='https://www.linkedin.com/in/blarknes' target='_blank'><FaLinkedinIn /></a>
-  <a href='https://github.com/blarknes' target='_blank'><FaGithub /></a>
-  <a href='https://app.hackthebox.com/profile/1419398' target='_blank'><FaCube /></a>
-  <a href='https://tryhackme.com/p/blarknes' target='_blank'><IoIosCloudOutline /></a>
-</footer>
-
 <style lang='scss'>
-  main {
+  nav {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 80vh;
-  }
-  nav, footer {
-    display: flex;
     gap: 12px;
     * {
       height: 26px;
     }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28vh;
   }
   h1 {
     font-size: calc(.8vw + 1.7rem);
@@ -85,7 +87,7 @@
   }
   h2 {
     width: fit-content;
-    padding-right: 4px;
+    padding-right: 2px;
     border-right: 2px solid;
     font-family: 'Noto Sans JP', sans-serif;
     animation: blink .8s infinite;
