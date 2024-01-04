@@ -3,15 +3,11 @@
   import { Background, Loader } from '$components';
   import 'modern-normalize/modern-normalize.css';
   import '../lib/styles/main.scss';
-
-  let toggled = false;
-
-  $: if($navigating) toggled = !toggled;
 </script>
 
 <Background />
 
-{#key toggled}
+{#key $navigating}
   <Loader />
 {/key}
 
