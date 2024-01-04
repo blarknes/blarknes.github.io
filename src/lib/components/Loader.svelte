@@ -8,7 +8,7 @@
 
   const loader = async () => {
     try { font_awaiter(); } catch (error) {}
-    try { await sleep(1000); } catch (error) {}
+    try { await sleep(500); } catch (error) {}
     disappear();
   }
 
