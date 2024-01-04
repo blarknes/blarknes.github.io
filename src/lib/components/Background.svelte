@@ -24,13 +24,13 @@
     top: 0;
     z-index: -1;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     overflow: hidden;
   }
   picture {
     width: fit-content;
     height: 65vw;
-    max-height: 70vh;
+    max-height: 50vh;
     img {
       height: 100%;
     }

@@ -29,9 +29,6 @@
   h1, h2 {
     text-align: center;
   }
-  h2, p {
-    background-color: variables.$background-color-transparent;
-  }
   a {
     color: variables.$text-color-3;
     &:hover {
