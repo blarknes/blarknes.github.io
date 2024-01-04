@@ -22,6 +22,9 @@
   }
   section {
     max-width: 70vw;
+    & > * {
+      background-color: variables.$background-color-transparent;
+    }
   }
   h1, h2 {
     text-align: center;
