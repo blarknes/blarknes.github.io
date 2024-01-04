@@ -22,15 +22,12 @@
   }
   section {
     max-width: 70vw;
-    & > * {
-      background-color: variables.$background-color-transparent;
-    }
-  }
-  h1, h2 {
-    text-align: center;
   }
   h1 {
     font-size: 4rem;
+  }
+  h1, h2 {
+    text-align: center;
   }
   a {
     color: variables.$text-color-3;
@@ -39,7 +36,7 @@
     }
   }
   p {
-    margin-top: 1vh;
+    margin-top: 2vh;
     text-align: right;
   }
 </style>
