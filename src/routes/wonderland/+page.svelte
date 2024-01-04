@@ -49,6 +49,9 @@
       font-family: 'Noto Sans JP', sans-serif;
     }
   }
+  p {
+    background-color: variables.$background-color-transparent;
+  }
   picture {
     display: flex;
     width: fit-content;
