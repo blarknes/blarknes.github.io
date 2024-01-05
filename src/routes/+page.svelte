@@ -33,7 +33,7 @@
         await sleep(500);
 
         if (i == DESCRIPTIONS.length - 1) {
-          await sleep(1000);
+          await sleep(1500);
         }
 
         for (let pos = current.length; pos >= 0; pos--) {
