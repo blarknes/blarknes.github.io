@@ -33,7 +33,6 @@
   nav {
     display: flex;
     justify-content: center;
-    gap: 12px;
     * {
       height: 26px;
     }

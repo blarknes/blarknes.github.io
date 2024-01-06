@@ -18,9 +18,9 @@
 <style lang='scss'>
   main {
     display: flex;
-    position: absolute;
-    justify-content: end;
     align-items: end;
+    justify-content: end;
+    position: absolute;
     top: 0;
     z-index: -1;
     width: 100vw;
