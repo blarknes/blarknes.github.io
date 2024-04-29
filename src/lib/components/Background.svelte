@@ -1,10 +1,10 @@
 <script>
-  import { load_lazily } from '$actions';
+  import { preload } from '$actions';
   import { background_large, background_small } from '$assets';
 </script>
 
 <main>
-  {#await load_lazily(background_large)}
+  {#await preload(background_large)}
     <picture>
       <img src={background_small} alt='background' />
     </picture>

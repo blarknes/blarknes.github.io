@@ -1,4 +1,4 @@
-import load_lazily from './load_lazily';
+import preload from './preload';
 import sleep from './sleep';
 
-export { load_lazily, sleep };
+export { preload, sleep };
