@@ -8,9 +8,9 @@
 
 <main>
   <section>
-    <h1 class="bold">404</h1>
-    <h2>I have my own problems to take care of.<a href='{base}/' class="accent">&nbsp;Here, this one is yours</a></h2>
-    <p>- Wirt (the<span class="italic">&nbsp;Elder&nbsp;</span>Child)</p>
+    <h1 class='bold'>404</h1>
+    <h2>I have my own problems to take care of.<a href='{base}/' class='accent'>&nbsp;Here, this one is yours</a></h2>
+    <p>- Wirt (the<span class='italic'>&nbsp;Elder&nbsp;</span>Child)</p>
   </section>
 </main>
 
@@ -20,27 +20,21 @@
     justify-content: center;
     margin-top: 30vh;
   }
-
   section {
     max-width: 70vw;
   }
-
   h1 {
     font-size: 4rem;
   }
-
   h1, h2 {
     text-align: center;
   }
-
   a {
     color: variables.$text-color-3;
-
     &:hover {
       color: variables.$text-color-2;
     }
   }
-
   p {
     margin-top: 2vh;
     text-align: right;

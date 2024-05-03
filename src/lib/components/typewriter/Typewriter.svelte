@@ -1,17 +1,17 @@
 <script>
-  import { sleep } from "$actions";
-  import { onMount } from "svelte";
+  import { sleep } from '$actions';
+  import { onMount } from 'svelte';
 
   const DESCRIPTIONS = [
-    " a developer",
-    " nonchalant",
-    " a hacker",
-    " a lover",
-    " me",
+    ' a developer',
+    ' nonchalant',
+    ' a hacker',
+    ' a lover',
+    ' me',
   ];
   let description = DESCRIPTIONS[0];
 
-  $: description = "I am" + description;
+  $: description = 'I am' + description;
 
   const typewriter = async () => {
     while (true) {
@@ -45,7 +45,7 @@
   <h2>{description}&ZeroWidthSpace;</h2>
 </main>
 
-<style lang="scss">
+<style lang='scss'>
   main {
     display: flex;
     flex-direction: column;
@@ -53,17 +53,15 @@
     justify-content: center;
     margin-top: 28vh;
   }
-
   h1 {
     font-size: calc(0.8vw + 1.7rem);
     font-weight: bold;
   }
-
   h2 {
     width: fit-content;
     padding-right: 2px;
     border-right: 2px solid;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     animation: blink 0.8s infinite;
     line-height: 1.1;
   }
