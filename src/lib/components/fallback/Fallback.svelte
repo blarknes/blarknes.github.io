@@ -20,21 +20,27 @@
     justify-content: center;
     margin-top: 30vh;
   }
+
   section {
     max-width: 70vw;
   }
+
   h1 {
     font-size: 4rem;
   }
+
   h1, h2 {
     text-align: center;
   }
+
   a {
     color: variables.$text-color-3;
+
     &:hover {
       color: variables.$text-color-2;
     }
   }
+
   p {
     margin-top: 2vh;
     text-align: right;

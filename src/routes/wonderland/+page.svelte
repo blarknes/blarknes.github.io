@@ -1,17 +1,14 @@
 <script>
   import { preload } from '$actions';
-  import { base } from '$app/paths';
   import { white_rabbit_large, white_rabbit_small } from '$assets';
-  import FaHome from 'svelte-icons/fa/FaHome.svelte';
+  import { WonderlandNavbar } from '$components';
 </script>
 
 <svelte:head>
   <title>wonderland</title>
 </svelte:head>
 
-<nav>
-  <a href={base + '/'}><FaHome /></a>
-</nav>
+<WonderlandNavbar />
 
 <article>
   <p>If <span class='thin italic accent'>you</span> don't know</p>
@@ -30,13 +27,6 @@
 </article>
 
 <style lang='scss'>
-  nav {
-    display: flex;
-    justify-content: center;
-    * {
-      height: 26px;
-    }
-  }
   article {
     display: flex;
     flex-direction: column;

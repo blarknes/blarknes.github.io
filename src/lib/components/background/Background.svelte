@@ -27,6 +27,7 @@
     height: 100dvh;
     overflow: hidden;
   }
+
   picture {
     width: fit-content;
     height: 65vw;
