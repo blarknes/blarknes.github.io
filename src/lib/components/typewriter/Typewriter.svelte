@@ -53,10 +53,12 @@
     justify-content: center;
     margin-top: 28vh;
   }
+
   h1 {
     font-size: calc(0.8vw + 1.7rem);
     font-weight: bold;
   }
+
   h2 {
     width: fit-content;
     padding-right: 2px;

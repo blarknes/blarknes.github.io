@@ -1,0 +1,43 @@
+.thin {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.emphasis {
+  background-color: variables.$text-color-2;
+
+  &::-moz-selection {
+    background-color: variables.$text-color-3;
+    color: variables.$background-color;
+  }
+
+  &::selection {
+    background-color: variables.$text-color-3;
+    color: variables.$background-color;
+  }
+}
+
+.accent {
+  color: variables.$text-color-3;
+
+  &::-moz-selection {
+    background-color: variables.$text-color-3;
+    color: variables.$text-color-2;
+  }
+
+  &::selection {
+    background-color: variables.$text-color-3;
+    color: variables.$text-color-2;
+  }
+}

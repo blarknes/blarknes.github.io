@@ -1,7 +1,7 @@
 <script>
   import { navigating } from '$app/stores';
   import { Background, Loader } from '$components';
-  import '../lib/styles/main.scss';
+  import '$styles/main.scss';
 </script>
 
 <Background />

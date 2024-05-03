@@ -27,10 +27,12 @@
     height: 100dvh;
     overflow: hidden;
   }
+
   picture {
     width: fit-content;
     height: 65vw;
     max-height: 50vh;
+
     img {
       height: 100%;
     }

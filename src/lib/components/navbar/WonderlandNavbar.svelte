@@ -11,6 +11,7 @@
   nav {
     display: flex;
     justify-content: center;
+
     * {
       height: 26px;
     }
