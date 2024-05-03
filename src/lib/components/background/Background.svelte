@@ -1,18 +1,18 @@
 <script>
-  import { preload } from '$actions';
   import { background_large, background_small } from '$assets';
+  import { ImageLoader } from '$components';
+
+  const imageInformation = {
+    large_image: background_large,
+    small_image: background_small,
+    image_text: 'background',
+  }
 </script>
 
 <main>
-  {#await preload(background_large)}
-    <picture>
-      <img src={background_small} alt='background' />
-    </picture>
-  {:then loaded}
-    <picture>
-      <img src={loaded} alt='background' />
-    </picture>
-  {/await}
+  <picture>
+    <ImageLoader {imageInformation}/>
+  </picture>
 </main>
 
 <style lang='scss'>
@@ -32,9 +32,5 @@
     width: fit-content;
     height: 65vw;
     max-height: 50vh;
-
-    img {
-      height: 100%;
-    }
   }
 </style>
