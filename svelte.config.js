@@ -11,9 +11,9 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-      $assets: 'src/lib/assets/_index',
-      $actions: 'src/lib/actions/_index',
-      $components: 'src/lib/components/_index',
+      $assets: 'src/lib/assets/index',
+      $actions: 'src/lib/actions/index',
+      $components: 'src/lib/components/index',
     },
     paths: {
       base: '',
