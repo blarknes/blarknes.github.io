@@ -7,12 +7,12 @@
   $: loader_element;
 
   const loader = async () => {
-    try { font_awaiter(); } catch (error) {}
+    try { await wait_font(); } catch (error) {}
     try { await sleep(500); } catch (error) {}
     disappear();
   }
 
-  const font_awaiter = async () => {
+  const wait_font = async () => {
     let result = false;
     let time = 50;
     for (let i = 0; i < 6; i++) {
