@@ -18,6 +18,7 @@
 <style lang='scss'>
   nav {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     gap: 12px;
 
