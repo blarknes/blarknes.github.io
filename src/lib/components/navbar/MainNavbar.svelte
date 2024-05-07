@@ -18,11 +18,11 @@
 <style lang='scss'>
   nav {
     display: flex;
-    display: -webkit-flexbox;
     justify-content: center;
     gap: 12px;
 
     * {
+      width: 26px;
       height: 26px;
     }
   }
