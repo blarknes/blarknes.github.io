@@ -61,7 +61,6 @@
   }
 
   h2 {
-    width: fit-content;
     padding-right: 2px;
     border-right: 2px solid;
     font-family: 'Noto Sans JP', sans-serif;
