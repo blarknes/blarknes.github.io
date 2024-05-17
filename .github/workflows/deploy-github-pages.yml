@@ -28,5 +28,4 @@ jobs:
         run: |
           git config --global user.email $EMAIL
           git config --global user.name $USERNAME
-          git remote set-url origin https://$USERNAME:$GITHUB_TOKEN@github.com/USERNAME/blarknes.github.io.git
           npm run deploy
