@@ -15,10 +15,7 @@ const config = {
       $actions: 'src/lib/actions/index',
       $components: 'src/lib/components/index',
       $styles: 'src/lib/styles',
-    },
-    paths: {
-      base: '',
-    },
+    }
   },
 };
 
