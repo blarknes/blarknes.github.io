@@ -23,9 +23,9 @@ jobs:
         env:
           EMAIL: ${{ secrets.EMAIL }}
           USERNAME: ${{ secrets.USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
         run: |
-          git config --global user.email $EMAIL
           git config --global user.name $USERNAME
+          git remote set-url origin https://$USERNAME:$GH_TOKEN@github.com/$USERNAME/blarknes.github.io.git
           npm run deploy
