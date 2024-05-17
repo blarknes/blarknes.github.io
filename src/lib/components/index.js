@@ -13,5 +13,5 @@ export {
   Loader,
   MainNavbar,
   WonderlandNavbar,
-  Typewriter
+  Typewriter,
 };

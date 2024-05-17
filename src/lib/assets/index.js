@@ -7,5 +7,5 @@ export {
   background_large,
   background_small,
   white_rabbit_large,
-  white_rabbit_small
+  white_rabbit_small,
 };

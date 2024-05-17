@@ -3,5 +3,5 @@ import sleep from './functions/sleep';
 
 export {
   preload,
-  sleep
+  sleep,
 };
