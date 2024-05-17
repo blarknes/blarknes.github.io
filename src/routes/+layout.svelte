@@ -10,6 +10,4 @@
   <Loader />
 {/key}
 
-<main>
-  <slot />
-</main>
+<slot />
