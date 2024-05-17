@@ -28,4 +28,3 @@ jobs:
         run: |
           git config --global user.email $EMAIL
           git config --global user.name $NAME
-          npm run deploy
