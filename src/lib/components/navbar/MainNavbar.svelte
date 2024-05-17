@@ -17,6 +17,8 @@
 
 <style lang='scss'>
   nav {
+    background-color: red;
+
     display: flex;
     justify-content: center;
     gap: 12px;
