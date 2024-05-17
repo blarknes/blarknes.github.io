@@ -21,13 +21,11 @@ jobs:
 
       - name: Run deploy command
         env:
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
-          USER_NAME: ${{ secrets.USER_NAME }}
+          EMAIL: ${{ secrets.USER_EMAIL }}
+          NAME: ${{ secrets.USER_NAME }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         run: |
-          echo ${{ secrets.USER_NAME }}
-          git config --global user.email $USER_EMAIL
-          git config --global user.name $USER_NAME
-          git remote set-url origin https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/blarknes.github.io.git
+          git config --global user.email $EMAIL
+          git config --global user.name $NAME
           npm run deploy
