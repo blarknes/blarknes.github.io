@@ -27,6 +27,9 @@ a, i {
   transition: all .2s ease-out;
 
   &:hover {
-    color: variables.$text-color-2;
+    * {
+      color: variables.$text-color-2;
+      transition: all .2s ease-out;
+    }
   }
 }
