@@ -1,0 +1,32 @@
+name: Deploy GitHub Pages
+run-name: Deploy Website to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run deploy command
+        env:
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+          USER_NAME: ${{ secrets.USER_NAME }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        run: |
+          git config --global user.email $USER_EMAIL
+          git config --global user.name $USER_NAME
+          git remote set-url origin https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/blarknes.github.io.git
+          npm run deploy
