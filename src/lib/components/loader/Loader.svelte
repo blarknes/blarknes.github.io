@@ -28,7 +28,6 @@
     let interval = setInterval(function () {
       if (opacity > 0) {
         opacity -= 0.1;
-        console.log(loaderElement)
         loaderElement.style.opacity = opacity;
       } else {
         clearInterval(interval);
