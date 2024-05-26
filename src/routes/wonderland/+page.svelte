@@ -5,7 +5,7 @@
   const imageInformation = {
     largeImage: WhiteRabbitLarge,
     smallImage: WhiteRabbitSmall,
-    imageText: 'white-rabbit',
+    imageText: 'white rabbit',
   };
 </script>
 
