@@ -38,7 +38,7 @@
     }
   };
 
-  onMount(typewriter);
+  onMount(typewriter());
 </script>
 
 <main>

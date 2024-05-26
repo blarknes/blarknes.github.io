@@ -36,7 +36,7 @@
     }, 60);
   }
 
-  onMount(loader);
+  onMount(loader());
 </script>
 
 <div bind:this={loaderElement} />
