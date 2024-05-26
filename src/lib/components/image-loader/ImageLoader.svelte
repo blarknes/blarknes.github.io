@@ -3,15 +3,15 @@
 
   export let imageInformation;
 
-  const large_image = imageInformation.large_image;
-  const small_image = imageInformation.small_image;
-  const image_text = imageInformation.image_text;
+  const LARGE_IMAGE = imageInformation.largeImage;
+  const SMALL_IMAGE = imageInformation.smallImage;
+  const IMAGE_TEXT = imageInformation.imageText;
 </script>
 
-{#await preload(large_image)}
-  <img src={small_image} alt={image_text} />
+{#await preload(LARGE_IMAGE)}
+  <img src={SMALL_IMAGE} alt={IMAGE_TEXT} />
 {:then loaded}
-  <img src={loaded} alt={image_text} />
+  <img src={loaded} alt={IMAGE_TEXT} />
 {/await}
 
 <style lang='scss'>

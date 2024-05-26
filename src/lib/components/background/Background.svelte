@@ -1,11 +1,11 @@
 <script>
-  import { background_large, background_small } from '$assets';
+  import { BackgroundLarge, BackgroundSmall } from '$assets';
   import { ImageLoader } from '$components';
 
   const imageInformation = {
-    large_image: background_large,
-    small_image: background_small,
-    image_text: 'background',
+    largeImage: BackgroundLarge,
+    smallImage: BackgroundSmall,
+    imageText: 'background',
   }
 </script>
 

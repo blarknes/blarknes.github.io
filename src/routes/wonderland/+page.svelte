@@ -1,11 +1,11 @@
 <script>
-  import { white_rabbit_large, white_rabbit_small } from '$assets';
+  import { WhiteRabbitLarge, WhiteRabbitSmall } from '$assets';
   import { ImageLoader, WonderlandNavbar } from '$components';
 
   const imageInformation = {
-    large_image: white_rabbit_large,
-    small_image: white_rabbit_small,
-    image_text: 'white-rabbit',
+    largeImage: WhiteRabbitLarge,
+    smallImage: WhiteRabbitSmall,
+    imageText: 'white-rabbit',
   }
 </script>
 

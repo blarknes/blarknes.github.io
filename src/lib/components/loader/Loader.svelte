@@ -2,17 +2,17 @@
   import { sleep } from '$actions';
   import { onMount } from 'svelte';
 
-  let loader_element;
+  let loaderElement;
 
-  $: loader_element;
+  $: loaderElement;
 
   const loader = async () => {
-    try { await wait_font(); } catch (error) {}
+    try { await waitFont(); } catch (error) {}
     try { await sleep(500); } catch (error) {}
     disappear();
   }
 
-  const wait_font = async () => {
+  const waitFont = async () => {
     let result = false;
     let time = 50;
     for (let i = 0; i < 6; i++) {
@@ -28,10 +28,10 @@
     let interval = setInterval(function () {
       if (opacity > 0) {
         opacity -= 0.1;
-        loader_element.style.opacity = opacity;
+        loaderElement.style.opacity = opacity;
       } else {
         clearInterval(interval);
-        loader_element.style.display = 'none';
+        loaderElement.style.display = 'none';
       }
     }, 60);
   }
@@ -39,7 +39,7 @@
   onMount(loader);
 </script>
 
-<div bind:this={loader_element} />
+<div bind:this={loaderElement} />
 
 <style lang='scss'>
   div {
