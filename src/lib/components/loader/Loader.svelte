@@ -6,13 +6,13 @@
 
   $: loaderElement;
 
-  const loader = async () => {
+  async function loader() {
     try { await waitFont(); } catch (error) {}
     try { await sleep(500); } catch (error) {}
     disappear();
   }
 
-  const waitFont = async () => {
+  async function waitFont() {
     let result = false;
     let time = 50;
     for (let i = 0; i < 6; i++) {
@@ -23,11 +23,12 @@
     }
   }
 
-  const disappear = async () => {
+  async function disappear() {
     let opacity = 1;
     let interval = setInterval(function () {
       if (opacity > 0) {
         opacity -= 0.1;
+        console.log(loaderElement)
         loaderElement.style.opacity = opacity;
       } else {
         clearInterval(interval);
@@ -36,7 +37,7 @@
     }, 60);
   }
 
-  onMount(loader());
+  onMount(loader);
 </script>
 
 <div bind:this={loaderElement} />

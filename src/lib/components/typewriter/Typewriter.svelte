@@ -14,7 +14,7 @@
 
   $: description = 'I am' + description;
 
-  const typewriter = async () => {
+  async function typewriter() {
     while (true) {
       for (let i = 0; i < DESCRIPTIONS.length; i++) {
         const current = DESCRIPTIONS[i];
@@ -38,7 +38,7 @@
     }
   };
 
-  onMount(typewriter());
+  onMount(typewriter);
 </script>
 
 <main>
