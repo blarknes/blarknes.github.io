@@ -6,7 +6,7 @@
     largeImage: BackgroundLarge,
     smallImage: BackgroundSmall,
     imageText: 'background',
-  }
+  };
 </script>
 
 <main>

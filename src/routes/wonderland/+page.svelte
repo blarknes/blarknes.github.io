@@ -6,7 +6,7 @@
     largeImage: WhiteRabbitLarge,
     smallImage: WhiteRabbitSmall,
     imageText: 'white-rabbit',
-  }
+  };
 </script>
 
 <svelte:head>
