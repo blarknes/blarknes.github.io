@@ -1,6 +1,6 @@
 <script>
   import { base } from '$app/paths';
-  import FaHome from 'svelte-icons/fa/FaHome.svelte';
+  import { FaHome } from '$icons';
 </script>
 
 <nav>

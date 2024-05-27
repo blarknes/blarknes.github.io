@@ -14,7 +14,8 @@ const config = {
       $actions: 'src/lib/actions/index',
       $assets: 'src/lib/assets/index',
       $components: 'src/lib/components/index',
-      $styles: 'src/lib/styles',
+      $icons: 'src/lib/icons/index',
+      $styles: 'src/lib/styles/main.scss',
     },
   },
 };

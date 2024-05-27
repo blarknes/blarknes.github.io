@@ -1,10 +1,6 @@
 <script>
   import { base } from '$app/paths';
-  import FaCat from 'svelte-icons/fa/FaCat.svelte';
-  import FaCube from 'svelte-icons/fa/FaCube.svelte';
-  import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
-  import FaLinkedinIn from 'svelte-icons/fa/FaLinkedinIn.svelte';
-  import IoIosCloudOutline from 'svelte-icons/io/IoIosCloudOutline.svelte';
+  import { FaCat, FaCube, FaGithub, FaLinkedinIn, IoIosCloudOutline } from '$icons';
 </script>
 
 <nav>
