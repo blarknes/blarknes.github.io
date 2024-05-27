@@ -4,7 +4,7 @@
 </script>
 
 <nav>
-  <a href={base + '/'}><FaHome /></a>
+  <a href='{base}/'><FaHome /></a>
 </nav>
 
 <style lang='scss'>
