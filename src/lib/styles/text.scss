@@ -15,29 +15,29 @@
 }
 
 .emphasis {
-  background-color: variables.$text-color-2;
+  background-color: colors.$text-2;
 
   &::-moz-selection {
-    background-color: variables.$text-color-3;
-    color: variables.$background-color;
+    background-color: colors.$text-3;
+    color: colors.$background;
   }
 
   &::selection {
-    background-color: variables.$text-color-3;
-    color: variables.$background-color;
+    background-color: colors.$text-3;
+    color: colors.$background;
   }
 }
 
 .accent {
-  color: variables.$text-color-3;
+  color: colors.$text-3;
 
   &::-moz-selection {
-    background-color: variables.$text-color-3;
-    color: variables.$text-color-2;
+    background-color: colors.$text-3;
+    color: colors.$text-2;
   }
 
   &::selection {
-    background-color: variables.$text-color-3;
-    color: variables.$text-color-2;
+    background-color: colors.$text-3;
+    color: colors.$text-2;
   }
 }

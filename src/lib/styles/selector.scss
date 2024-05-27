@@ -8,9 +8,9 @@ i, img, section > span {
 }
 
 ::-moz-selection {
-  background: variables.$text-color-4;
+  background: colors.$text-4;
 }
 
 ::selection {
-  background: variables.$text-color-4;
+  background: colors.$text-4;
 }

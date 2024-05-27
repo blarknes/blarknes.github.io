@@ -34,10 +34,10 @@
   }
 
   a {
-    color: variables.$text-color-3;
+    color: colors.$text-3;
 
     &:hover {
-      color: variables.$text-color-2;
+      color: colors.$text-2;
     }
   }
 

@@ -48,6 +48,6 @@
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: variables.$background-color;
+    background-color: colors.$background;
   }
 </style>

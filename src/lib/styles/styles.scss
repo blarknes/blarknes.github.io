@@ -1,5 +1,5 @@
 html {
-  background-color: variables.$background-color;
+  background-color: colors.$background;
 
   * {
     font: inherit;
@@ -7,7 +7,7 @@ html {
     text-decoration: none;
     text-rendering: optimizeLegibility;
     text-size-adjust: none;
-    color: variables.$text-color-1;
+    color: colors.$text-1;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
   }
@@ -28,7 +28,7 @@ a, i {
 
   &:hover {
     * {
-      color: variables.$text-color-2;
+      color: colors.$text-2;
       transition: all .2s ease-out;
     }
   }
