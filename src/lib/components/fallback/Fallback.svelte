@@ -18,11 +18,11 @@
   main {
     display: flex;
     justify-content: center;
-    margin-top: 30vh;
+    margin-top: 30dvh;
   }
 
   section {
-    max-width: 70vw;
+    max-width: 70dvw;
   }
 
   h1 {
@@ -42,7 +42,7 @@
   }
 
   p {
-    margin-top: 2vh;
+    margin-top: 2dvh;
     text-align: right;
   }
 </style>

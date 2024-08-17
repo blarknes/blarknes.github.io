@@ -52,11 +52,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 28vh;
+    margin-top: 28dvh;
   }
 
   h1 {
-    font-size: calc(0.8vw + 1.7rem);
+    font-size: calc(0.8dvw + 1.7rem);
     font-weight: bold;
   }
 

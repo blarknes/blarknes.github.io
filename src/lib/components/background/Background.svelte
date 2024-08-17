@@ -23,14 +23,14 @@
     position: absolute;
     top: 0;
     z-index: -1;
-    width: 100vw;
+    width: 100dvw;
     height: 100dvh;
     overflow: hidden;
   }
 
   picture {
     width: fit-content;
-    height: 65vw;
-    max-height: 50vh;
+    height: 65dvw;
+    max-height: 50dvh;
   }
 </style>

@@ -31,8 +31,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 22vh;
-    font-size: calc(.8vw + 1.2rem);
+    margin-top: 22dvh;
+    font-size: calc(.8dvw + 1.2rem);
 
     p, span {
       font-family: 'Noto Sans JP', sans-serif;
@@ -42,7 +42,7 @@
   picture {
     display: flex;
     width: fit-content;
-    height: 15vh;
-    margin-top: 8vh;
+    height: 15dvh;
+    margin-top: 8dvh;
   }
 </style>

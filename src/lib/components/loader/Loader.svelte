@@ -46,7 +46,7 @@
     position: absolute;
     top: 0;
     z-index: 1;
-    width: 100vw;
+    width: 100dvw;
     height: 100dvh;
     background-color: colors.$background;
   }
