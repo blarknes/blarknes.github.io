@@ -9,8 +9,8 @@
 <main>
   <section>
     <h1 class="bold">404</h1>
-    <h2>I have my own problems to take care of.<a href="{base}/" class="accent">&nbsp;Here, this one is yours</a></h2>
-    <p>- Wirt (the<span class="italic">&nbsp;Elder&nbsp;</span>Child)</p>
+    <h2 class="thin">I have my own problems to take care of.<a href="{base}/" class="accent">&nbsp;Here, this one is yours</a></h2>
+    <p class="thin">- Wirt (the<span class="italic">&nbsp;Elder&nbsp;</span>Child)</p>
   </section>
 </main>
 
