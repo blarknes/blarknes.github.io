@@ -1,5 +1,5 @@
 <script>
-  import { MainNavbar, Typewriter } from '$components';
+  import { MainNavbar, Typewriter } from "$components";
 </script>
 
 <svelte:head>

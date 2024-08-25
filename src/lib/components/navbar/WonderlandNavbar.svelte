@@ -1,13 +1,13 @@
 <script>
-  import { base } from '$app/paths';
-  import { FaHome } from '$icons';
+  import { base } from "$app/paths";
+  import { FaHome } from "$icons";
 </script>
 
 <nav>
-  <a href='{base}/'><FaHome /></a>
+  <a href="{base}/"><FaHome /></a>
 </nav>
 
-<style lang='scss'>
+<style lang="scss">
   nav {
     display: flex;
     justify-content: center;

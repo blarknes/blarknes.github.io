@@ -1,11 +1,11 @@
 <script>
-  import { preload } from '$actions';
+  import { preload } from "$actions";
 
-  export let imageInformation;
+  export let information;
 
-  const LARGE_IMAGE = imageInformation.largeImage;
-  const SMALL_IMAGE = imageInformation.smallImage;
-  const IMAGE_TEXT = imageInformation.imageText;
+  const LARGE_IMAGE = information.largeImage;
+  const SMALL_IMAGE = information.smallImage;
+  const IMAGE_TEXT = information.imageText;
 </script>
 
 {#await preload(LARGE_IMAGE)}
@@ -14,7 +14,7 @@
   <img src={loaded} alt={IMAGE_TEXT} />
 {/await}
 
-<style lang='scss'>
+<style lang="scss">
   img {
     height: 100%;
   }

@@ -1,5 +1,5 @@
 <script>
-  import { base } from '$app/paths';
+  import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -8,13 +8,13 @@
 
 <main>
   <section>
-    <h1 class='bold'>404</h1>
-    <h2>I have my own problems to take care of.<a href='{base}/' class='accent'>&nbsp;Here, this one is yours</a></h2>
-    <p>- Wirt (the<span class='italic'>&nbsp;Elder&nbsp;</span>Child)</p>
+    <h1 class="bold">404</h1>
+    <h2>I have my own problems to take care of.<a href="{base}/" class="accent">&nbsp;Here, this one is yours</a></h2>
+    <p>- Wirt (the<span class="italic">&nbsp;Elder&nbsp;</span>Child)</p>
   </section>
 </main>
 
-<style lang='scss'>
+<style lang="scss">
   main {
     display: flex;
     justify-content: center;

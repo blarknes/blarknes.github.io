@@ -1,5 +1,5 @@
-import preload from './functions/preload';
-import sleep from './functions/sleep';
+import preload from "./functions/preload";
+import sleep from "./functions/sleep";
 
 export {
   preload,

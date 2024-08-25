@@ -1,6 +1,6 @@
 # [blarknes.github.io](https://blarknes.github.io/)
 
-My personal webpage, a place where you can find my social media profiles as well as the certificates I've earned.
+My personal webpage, a place where you can find my social media profiles.
 
 The website is made with Svelte, a component framework, and SvelteKit, an UI framework built on Svelte.
 

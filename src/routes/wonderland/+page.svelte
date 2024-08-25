@@ -1,11 +1,11 @@
 <script>
-  import { WhiteRabbitLarge, WhiteRabbitSmall } from '$assets';
-  import { ImageLoader, WonderlandNavbar } from '$components';
+  import { WhiteRabbitLarge, WhiteRabbitSmall } from "$assets";
+  import { ImageLoader, WonderlandNavbar } from "$components";
 
-  const imageInformation = {
+  const information = {
     largeImage: WhiteRabbitLarge,
     smallImage: WhiteRabbitSmall,
-    imageText: 'white rabbit',
+    imageText: "white rabbit",
   };
 </script>
 
@@ -16,16 +16,16 @@
 <WonderlandNavbar />
 
 <article>
-  <p>If <span class='thin italic accent'>you</span> don't know</p>
-  <p>where <span class='bold underline'>you're</span> <span class='bold'>going,</span></p>
-  <p>any <span class='bold emphasis'>&nbsp;road&nbsp;</span><span class='thin italic'>&nbsp;will</span></p>
-  <p>take <span class='bold accent'>you there.</span></p>
+  <p>If <span class="thin italic accent">you</span> don't know</p>
+  <p>where <span class="bold underline">you're</span> <span class="bold">going,</span></p>
+  <p>any <span class="bold emphasis">&nbsp;road&nbsp;</span><span class="thin italic">&nbsp;will</span></p>
+  <p>take <span class="bold accent">you there.</span></p>
   <picture>
-    <ImageLoader {imageInformation}/>
+    <ImageLoader {information}/>
   </picture>
 </article>
 
-<style lang='scss'>
+<style lang="scss">
   article {
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
     font-size: calc(.8dvw + 1.2rem);
 
     p, span {
-      font-family: 'Noto Sans JP', sans-serif;
+      font-family: "Noto Sans JP", sans-serif;
     }
   }
 

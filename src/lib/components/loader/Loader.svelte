@@ -1,47 +1,51 @@
 <script>
-  import { sleep } from '$actions';
-  import { onMount } from 'svelte';
+  import { sleep } from "$actions";
+  import { onMount } from "svelte";
 
-  let loaderElement;
+  var loader;
 
-  $: loaderElement;
+  $: loader;
 
-  async function loader() {
+  async function runLoader() {
     try { await waitFont(); } catch (error) {}
     try { await sleep(500); } catch (error) {}
+
     disappear();
   }
 
   async function waitFont() {
-    let result = false;
-    let time = 50;
-    for (let i = 0; i < 6; i++) {
+    var result = false;
+    var time = 50;
+
+    for (var i = 0; i < 6; i++) {
       await sleep(time);
-      result = document.fonts.check('1px Poppins', '1px Noto Sans JP');
+
+      result = document.fonts.check("1px Poppins", "1px Noto Sans JP");
       if (result) break;
+
       time *= 2;
     }
   }
 
   async function disappear() {
-    let opacity = 1;
-    let interval = setInterval(function () {
+    var opacity = 1;
+    var interval = setInterval(function () {
       if (opacity > 0) {
         opacity -= 0.1;
-        loaderElement.style.opacity = opacity;
+        loader.style.opacity = opacity;
       } else {
         clearInterval(interval);
-        loaderElement.style.display = 'none';
+        loader.style.display = "none";
       }
-    }, 60);
+    }, 50);
   }
 
-  onMount(loader);
+  onMount(runLoader);
 </script>
 
-<div bind:this={loaderElement} />
+<div bind:this={loader} />
 
-<style lang='scss'>
+<style lang="scss">
   div {
     position: absolute;
     top: 0;

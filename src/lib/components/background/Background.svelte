@@ -1,21 +1,21 @@
 <script>
-  import { BackgroundLarge, BackgroundSmall } from '$assets';
-  import { ImageLoader } from '$components';
+  import { BackgroundLarge, BackgroundSmall } from "$assets";
+  import { ImageLoader } from "$components";
 
-  const imageInformation = {
+  const information = {
     largeImage: BackgroundLarge,
     smallImage: BackgroundSmall,
-    imageText: 'background',
+    imageText: "background",
   };
 </script>
 
 <main>
   <picture>
-    <ImageLoader {imageInformation}/>
+    <ImageLoader {information}/>
   </picture>
 </main>
 
-<style lang='scss'>
+<style lang="scss">
   main {
     display: flex;
     align-items: end;

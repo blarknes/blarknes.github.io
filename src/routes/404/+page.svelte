@@ -1,5 +1,5 @@
 <script>
-  import { Fallback } from '$components';
+  import { Fallback } from "$components";
 </script>
 
 <Fallback />
