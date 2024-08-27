@@ -14,10 +14,10 @@
   }
 
   async function waitFont() {
-    var result = false;
-    var time = 50;
+    let result = false;
+    let time = 50;
 
-    for (var i = 0; i < 6; i++) {
+    for (let i = 0; i < 6; i++) {
       await sleep(time);
 
       result = document.fonts.check("1px Poppins", "1px Noto Sans JP");
@@ -28,8 +28,8 @@
   }
 
   async function disappear() {
-    var opacity = 1;
-    var interval = setInterval(function () {
+    let opacity = 1;
+    let interval = setInterval(function () {
       if (opacity > 0) {
         opacity -= 0.1;
         loader.style.opacity = opacity;

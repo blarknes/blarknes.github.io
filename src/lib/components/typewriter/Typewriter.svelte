@@ -17,10 +17,10 @@
 
   async function typewriter() {
     while (true) {
-      for (var i = 0; i < DESCRIPTIONS.length; i++) {
+      for (let i = 0; i < DESCRIPTIONS.length; i++) {
         const current = DESCRIPTIONS[i];
 
-        for (var pos = 0; pos <= current.length; pos++) {
+        for (let pos = 0; pos <= current.length; pos++) {
           await sleep(120);
           description = current.slice(0, pos);
         }
@@ -31,7 +31,7 @@
           await sleep(1500);
         }
 
-        for (var pos = current.length; pos >= 0; pos--) {
+        for (let pos = current.length; pos >= 0; pos--) {
           await sleep(120);
           description = current.slice(0, pos);
         }
