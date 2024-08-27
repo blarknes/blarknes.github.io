@@ -30,7 +30,6 @@
 
   picture {
     width: fit-content;
-    height: 65dvw;
-    max-height: 50dvh;
+    height: min(50dvh, 65dvw);
   }
 </style>
