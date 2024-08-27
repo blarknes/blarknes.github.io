@@ -2,7 +2,7 @@
   import { sleep } from "$actions";
   import { onMount } from "svelte";
 
-  const DESCRIPTIONS = [
+  const descriptions = [
     " a developer",
     " nonchalant",
     " a hacker",
@@ -11,14 +11,14 @@
     " me",
   ];
 
-  var description = DESCRIPTIONS[0];
+  var description = descriptions[0];
 
   $: description = "I am" + description;
 
   async function typewriter() {
     while (true) {
-      for (let i = 0; i < DESCRIPTIONS.length; i++) {
-        const current = DESCRIPTIONS[i];
+      for (let i = 0; i < descriptions.length; i++) {
+        const current = descriptions[i];
 
         for (let pos = 0; pos <= current.length; pos++) {
           await sleep(120);
@@ -27,7 +27,7 @@
 
         await sleep(500);
 
-        if (i == DESCRIPTIONS.length - 1) {
+        if (i == descriptions.length - 1) {
           await sleep(1500);
         }
 
