@@ -1,14 +1,21 @@
 <script>
   import { sleep } from "$actions";
   import { onMount } from "svelte";
+  import { Shadow } from "svelte-loading-spinners";
 
   var loader;
-
   $: loader;
 
+  const color = "#ebedf0";
+  const size = "40";
+  const unit = "px";
+
   async function runLoader() {
-    try { await waitFont(); } catch (error) {}
-    try { await sleep(500); } catch (error) {}
+    try {
+      await waitFont();
+    } catch (error) {}
+
+    await sleep(500);
 
     disappear();
   }
@@ -43,15 +50,20 @@
   onMount(runLoader);
 </script>
 
-<div bind:this={loader} />
+<div bind:this={loader}>
+  <Shadow {color} {size} {unit} />
+</div>
 
 <style lang="scss">
   div {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 0;
     z-index: 1;
     width: 100dvw;
     height: 100dvh;
+    padding-top: 42dvh;
     background-color: colors.$background;
   }
 </style>
