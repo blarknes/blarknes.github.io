@@ -1,4 +1,10 @@
-export default async function preload(src) {
+/**
+ * Loads the desired src asset.
+ * 
+ * @param src the asset src
+ * @returns The loaded asset.
+ */
+export default async function load(src) {
   const response = await fetch(src);
   const blob = await response.blob();
 

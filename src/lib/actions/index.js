@@ -1,7 +1,7 @@
-import preload from "./functions/preload";
+import load from "./functions/load";
 import sleep from "./functions/sleep";
 
 export {
-  preload,
+  load,
   sleep,
 };

@@ -1,5 +1,5 @@
 <script>
-  import { preload } from "$actions";
+  import { load } from "$actions";
 
   export let information;
 
@@ -8,7 +8,7 @@
   const imageText = information.imageText;
 </script>
 
-{#await preload(largeImage)}
+{#await load(largeImage)}
   <img src={smallImage} alt={imageText} />
 {:then loaded}
   <img src={loaded} alt={imageText} />
