@@ -40,4 +40,4 @@ jobs:
           GITHUB_REPOSITORY: blarknes.github.io
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "blarknes <support+actions@github.com>"
+          npm run deploy -- -u "blarknes-bot <support+actions@github.com>"
