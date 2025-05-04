@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig tsconfig.json",
     "deploy": "gh-pages -d build"
   },
