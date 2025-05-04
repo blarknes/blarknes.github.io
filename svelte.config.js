@@ -1,20 +1,21 @@
 import adapter from "@sveltejs/adapter-static";
-import preprocess from "svelte-preprocess";
+import { sveltePreprocess } from "svelte-preprocess";
 
 const config = {
-  preprocess: preprocess({
+  preprocess: sveltePreprocess({
     scss: {
-      prependData: "@use 'src/lib/styles/colors';",
+      prependData: `@use "src/lib/styles/colors.scss";`,
     },
   }),
   kit: {
     adapter: adapter(),
     alias: {
-      $actions: "src/lib/actions/index",
-      $assets: "src/lib/assets/index",
       $components: "src/lib/components/index",
-      $icons: "src/lib/icons/index",
-      $styles: "src/lib/styles/main.scss",
+      $images: "src/lib/images/index",
+      $styles: "src/lib/styles/styles.scss",
+      $icons: "src/lib/icons",
+      $types: "src/lib/types.ts",
+      $utils: "src/lib/utils",
     },
   },
 };

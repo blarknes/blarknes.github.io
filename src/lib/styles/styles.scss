@@ -1,31 +1,42 @@
+@use "colors";
+@use "text";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+  color: colors.$primary;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-moz-selection {
+  background: colors.$selection;
+}
+
+::selection {
+  background: colors.$selection;
+}
+
 html {
   background-color: colors.$background;
-
-  * {
-    font-family: "Poppins", sans-serif;
-    font-size: 100%;
-    text-decoration: none;
-    text-rendering: optimizeLegibility;
-    text-size-adjust: none;
-    color: colors.$text-1;
-    vertical-align: baseline;
-    -webkit-font-smoothing: antialiased;
-  }
 }
 
-body {
-  padding: 8dvh 0;
-  font-size: 1.3em;
-}
-
-a, i {
-  cursor: pointer;
+a, a * {
   transition: all .2s ease-out;
+}
 
-  &:hover {
-    * {
-      color: colors.$text-2;
-      transition: all .2s ease-out;
-    }
-  }
+a:hover, a:hover * {
+  color: colors.$accent;
+  transition: all .2s ease-out;
 }

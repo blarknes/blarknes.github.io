@@ -1,27 +1,28 @@
-.DS_Store
-.cloudflare
-.env
-.netlify
-.pnpm-debug.log
-.svelte-kit
-.test-tmp
-.turbo
-.vercel
-.vercel_build_output
-.vscode/
-/build
-/documentation/types.js
-/packages/create-svelte/template/CHANGELOG.md
-/packages/package/test/**/package
-dist
+# node
+package-lock.json
 node_modules
-package-lock.json
-symlink-from
-test-results/
+
+# output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# os
+.DS_Store
+Thumbs.db
+
+# env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# vite
 vite.config.js.timestamp-*
-yarn.lock
-.eslintignore
-.eslintrc.cjs
-.prettierignore
-.prettierrc
-package-lock.json
+vite.config.ts.timestamp-*
+
+# ide
+.vscode/

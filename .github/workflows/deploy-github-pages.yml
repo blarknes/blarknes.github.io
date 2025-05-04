@@ -1,5 +1,5 @@
 name: Deploy GitHub Pages
-run-name: Deploy Website to GitHub Pages
+run-name: deploy website to GitHub Pages
 
 on:
   push:
@@ -19,12 +19,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Run deploy command
+      - name: Deploy Website
         env:
           EMAIL: ${{ secrets.EMAIL }}
           USERNAME: ${{ secrets.USERNAME }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email $EMAIL
           git config --global user.name $USERNAME

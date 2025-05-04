@@ -1,43 +1,48 @@
+@use "colors";
+
 .thin {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .italic {
+  @extend .thin;
   font-style: italic;
 }
 
 .underline {
+  @extend .bold;
   text-decoration: underline;
 }
 
-.emphasis {
-  background-color: colors.$text-2;
+.highlight {
+  @extend .bold;
+  background-color: colors.$accent;
 
   &::-moz-selection {
-    background-color: colors.$text-3;
+    background-color: colors.$highlight;
     color: colors.$background;
   }
 
   &::selection {
-    background-color: colors.$text-3;
+    background-color: colors.$highlight;
     color: colors.$background;
   }
 }
 
 .accent {
-  color: colors.$text-3;
+  color: colors.$highlight;
 
   &::-moz-selection {
-    background-color: colors.$text-3;
-    color: colors.$text-2;
+    background-color: colors.$highlight;
+    color: colors.$accent;
   }
 
   &::selection {
-    background-color: colors.$text-3;
-    color: colors.$text-2;
+    background-color: colors.$highlight;
+    color: colors.$accent;
   }
 }

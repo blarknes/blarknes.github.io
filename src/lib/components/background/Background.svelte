@@ -1,29 +1,30 @@
-<script>
-  import { BackgroundLarge, BackgroundSmall } from "$assets";
+<script lang="ts">
   import { ImageLoader } from "$components";
+  import { BackgroundLarge, BackgroundSmall } from "$images";
+  import type { ImageInfo } from "$types";
 
-  const information = {
-    largeImage: BackgroundLarge,
-    smallImage: BackgroundSmall,
-    imageText: "background",
-  };
+  const small = BackgroundSmall;
+  const large = BackgroundLarge;
+  const alt = "background";
+
+  const image: ImageInfo = { small, large, alt };
 </script>
 
-<main>
+<section>
   <picture>
-    <ImageLoader {information}/>
+    <ImageLoader {image} />
   </picture>
-</main>
+</section>
 
 <style lang="scss">
-  main {
+  section {
     display: flex;
     align-items: end;
     justify-content: end;
     position: absolute;
     top: 0;
     z-index: -1;
-    width: 100dvw;
+    width: 90dvw;
     height: 100dvh;
     overflow: hidden;
   }
