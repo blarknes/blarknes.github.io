@@ -19,13 +19,19 @@ jobs:
         with:
           node-version: 20
 
-      - name: Deploy Website
+      - name: Install dependencies
+        run: npm i
+
+      - name: Check Svelte files syntax
+        run: npm run check
+
+      - name: Build extension
+        run: npm run build
+
+      - name: Deploy with gh-pages
         env:
-          EMAIL: ${{ secrets.EMAIL }}
-          USERNAME: ${{ secrets.USERNAME }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: blarknes.github.io
         run: |
-          git config --global user.email $EMAIL
-          git config --global user.name $USERNAME
-          git remote set-url origin https://$USERNAME:$GH_TOKEN@github.com/$USERNAME/blarknes.github.io.git
-          npm run deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"

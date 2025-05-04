@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "check": "svelte-check --tsconfig tsconfig.json",
-    "deploy": "npm i && npm run build && gh-pages -d build -t true"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@iconify-json/dashicons": "^1.2.1",
