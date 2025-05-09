@@ -21,8 +21,6 @@ export type AfterDeleted = {
   blink: number;
 };
 
-export type StateElement = HTMLElement | null;
-
 export enum Page {
   HOME = "home",
   WONDERLAND = "wonderland",

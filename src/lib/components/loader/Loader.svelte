@@ -1,11 +1,9 @@
 <script lang="ts">
-  import type { StateElement } from "$types";
   import { delay } from "$utils";
   import { onMount } from "svelte";
   import { RingLoader } from "svelte-loading-spinners";
   import { fade } from "svelte/transition";
 
-  let loader: StateElement = $state(null);
   let visible = $state(true);
 
   const color = "#ebedf0";
@@ -26,7 +24,7 @@
 </script>
 
 {#if visible}
-  <section bind:this={loader} transition:fade={{ duration: 600 }}>
+  <section transition:fade={{ duration: 600 }}>
     <RingLoader {color} {size} {unit} {duration}  />
   </section>
 {/if}
