@@ -17,7 +17,7 @@
   ];
 
   const afterDeleted: AfterDeleted = {
-    blink: 2.5,
+    blink: 2,
   };
 </script>
 
