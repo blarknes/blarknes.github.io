@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20dvh 0 8dvh 0;
+    margin: 21dvh 0 8dvh 0;
   }
 
   p, span {

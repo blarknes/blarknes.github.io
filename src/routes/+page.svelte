@@ -32,7 +32,7 @@
 
 <style lang="scss">
   h1 {
-    margin-top: 26dvh;
+    margin-top: 27dvh;
     font-size: calc(0.8dvw + 1.7rem);
   }
 

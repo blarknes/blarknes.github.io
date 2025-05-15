@@ -18,5 +18,6 @@
 <style lang="scss">
   a {
     font-size: calc(0.45dvw + 1.2rem);
+    line-height: 0;
   }
 </style>
