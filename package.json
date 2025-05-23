@@ -1,8 +1,8 @@
 {
   "name": "blarknes.github.io",
   "version": "3.0.0",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
