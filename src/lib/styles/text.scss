@@ -1,4 +1,4 @@
-@use "colors";
+@use "palette";
 
 .thin {
   font-weight: 300;
@@ -20,29 +20,29 @@
 
 .highlight {
   @extend .bold;
-  background-color: colors.$accent;
+  background-color: palette.$accent;
 
   &::-moz-selection {
-    background-color: colors.$highlight;
-    color: colors.$background;
+    background-color: palette.$highlight;
+    color: palette.$background;
   }
 
   &::selection {
-    background-color: colors.$highlight;
-    color: colors.$background;
+    background-color: palette.$highlight;
+    color: palette.$background;
   }
 }
 
 .accent {
-  color: colors.$highlight;
+  color: palette.$highlight;
 
   &::-moz-selection {
-    background-color: colors.$highlight;
-    color: colors.$accent;
+    background-color: palette.$highlight;
+    color: palette.$accent;
   }
 
   &::selection {
-    background-color: colors.$highlight;
-    color: colors.$accent;
+    background-color: palette.$highlight;
+    color: palette.$accent;
   }
 }

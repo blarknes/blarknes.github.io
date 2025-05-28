@@ -4,7 +4,7 @@ import { sveltePreprocess } from "svelte-preprocess";
 const config = {
   preprocess: sveltePreprocess({
     scss: {
-      prependData: `@use "src/lib/styles/colors.scss";`,
+      prependData: `@use "src/lib/styles/palette.scss";`,
     },
   }),
   kit: {

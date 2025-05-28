@@ -1,4 +1,4 @@
-@use "colors";
+@use "palette";
 @use "text";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -14,22 +14,22 @@
   text-decoration: none;
   text-rendering: optimizeLegibility;
   text-size-adjust: none;
-  color: colors.$primary;
+  color: palette.$primary;
   box-sizing: border-box;
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
-  background: colors.$selection;
+  background: palette.$selection;
 }
 
 ::selection {
-  background: colors.$selection;
+  background: palette.$selection;
 }
 
 html {
-  background-color: colors.$background;
+  background-color: palette.$background;
 }
 
 a, a * {
@@ -37,6 +37,6 @@ a, a * {
 }
 
 a:hover, a:hover * {
-  color: colors.$accent;
+  color: palette.$accent;
   transition: all .2s ease-out;
 }

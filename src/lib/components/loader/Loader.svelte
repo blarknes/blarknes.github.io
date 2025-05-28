@@ -39,6 +39,6 @@
     width: 100dvw;
     height: 100dvh;
     padding-top: 44dvh;
-    background-color: colors.$background;
+    background-color: palette.$background;
   }
 </style>
