@@ -26,3 +26,8 @@ export enum Page {
   WONDERLAND = "wonderland",
   NOT_FOUND = "not found",
 }
+
+export type MetaTag = {
+  name: string;
+  content: string;
+};

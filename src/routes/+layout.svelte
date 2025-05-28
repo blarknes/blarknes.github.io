@@ -1,6 +1,6 @@
 <script lang="ts">
   import { navigating } from "$app/state";
-  import { Background, Loader } from "$components";
+  import { Background, Loader, MetaTags } from "$components";
   import "$styles";
   import type { Snippet } from "svelte";
 
@@ -13,6 +13,7 @@
   let key = $derived(navigating.to);
 </script>
 
+<MetaTags />
 <Background />
 
 {#key key}
