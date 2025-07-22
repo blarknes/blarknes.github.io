@@ -14,7 +14,7 @@ const config = {
       $images: "src/lib/images/index",
       $styles: "src/lib/styles/styles.scss",
       $icons: "src/lib/icons",
-      $types: "src/lib/types.ts",
+      $types: "src/lib/types",
       $utils: "src/lib/utils",
     },
   },
