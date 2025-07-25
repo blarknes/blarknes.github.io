@@ -11,20 +11,20 @@
 
   let { page }: NavigationProps = $props();
 
-  const pageOptions = new Map<Page, IconButtonInfo[]>([
-    [Page.HOME, [
-      { icon: LinkedInIcon  , target: "_blank", href: "https://www.linkedin.com/in/blarknes" },
-      { icon: GitHubIcon    , target: "_blank", href: "https://github.com/blarknes" },
-      { icon: CatIcon       , target: "_self",  href: `${base}/wonderland` },
-      { icon: HackTheBoxIcon, target: "_blank", href: "https://app.hackthebox.com/profile/1419398" },
-      { icon: TryHackMeIcon , target: "_blank", href: "https://tryhackme.com/p/blarknes" },
-    ]],
-    [Page.WONDERLAND, [
-      { icon: HomeIcon, target: "_self", href: `${base}/` },
-    ]]
-  ]);
+  const pageOptions: Partial<Record<Page, IconButtonInfo>> = {
+    [Page.HOME]:       { icon: CatIcon,  target: "_self", href: `${base}/wonderland` },
+    [Page.WONDERLAND]: { icon: HomeIcon, target: "_self", href: `${base}/` },
+  };
 
-  const options = pageOptions.get(page) || [];
+  const currentOption: IconButtonInfo[] = pageOptions[page] ? [pageOptions[page]] : [];
+
+  const options: IconButtonInfo[] = [
+    { icon: LinkedInIcon,   target: "_blank", href: "https://www.linkedin.com/in/blarknes" },
+    { icon: GitHubIcon,     target: "_blank", href: "https://github.com/blarknes" },
+    ...currentOption,
+    { icon: HackTheBoxIcon, target: "_blank", href: "https://app.hackthebox.com/profile/1419398" },
+    { icon: TryHackMeIcon,  target: "_blank", href: "https://tryhackme.com/p/blarknes" },
+  ];
 </script>
 
 <nav>
