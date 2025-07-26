@@ -1,6 +1,17 @@
 import type { Component } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 
+export enum Page {
+  HOME = "home",
+  WONDERLAND = "wonderland",
+  NOT_FOUND = "not found",
+}
+
+export type MetaTag = {
+  name: string;
+  content: string;
+};
+
 export type ImageInfo = {
   small: string;
   large: string;
@@ -19,15 +30,4 @@ export type IconButtonInfo = {
 
 export type AfterDeleted = {
   blink: number;
-};
-
-export enum Page {
-  HOME = "home",
-  WONDERLAND = "wonderland",
-  NOT_FOUND = "not found",
-}
-
-export type MetaTag = {
-  name: string;
-  content: string;
 };
