@@ -37,7 +37,6 @@
   }
 
   p {
-    font-family: "Noto Sans JP", sans-serif;
     font-size: calc(0.25dvw + 1.1rem);
   }
 </style>
