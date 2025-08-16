@@ -4,7 +4,7 @@
   import "$styles";
   import type { Snippet } from "svelte";
 
-  interface LayoutProps {
+  type LayoutProps = {
     children: Snippet<[]>;
   };
 

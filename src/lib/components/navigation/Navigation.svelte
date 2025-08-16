@@ -5,7 +5,7 @@
   import type { IconButtonInfo } from "$types";
   import { Page } from "$types";
 
-  interface NavigationProps {
+  type NavigationProps = {
     page: Page;
   };
 

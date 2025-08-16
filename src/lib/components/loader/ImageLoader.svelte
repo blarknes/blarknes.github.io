@@ -2,7 +2,7 @@
   import type { ImageInfo } from "$types";
   import { load } from "$utils";
 
-  interface ImageLoaderProps {
+  type ImageLoaderProps = {
     image: ImageInfo;
   };
 

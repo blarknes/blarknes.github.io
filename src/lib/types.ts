@@ -7,11 +7,6 @@ export enum Page {
   NOT_FOUND = "not found",
 }
 
-export type MetaTag = {
-  name: string;
-  content: string;
-};
-
 export type ImageInfo = {
   small: string;
   large: string;
@@ -26,8 +21,4 @@ export type IconButtonInfo = {
   icon: Icon;
   target: string;
   href: string;
-};
-
-export type AfterDeleted = {
-  blink: number;
 };

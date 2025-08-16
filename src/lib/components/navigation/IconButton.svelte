@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { IconButtonInfo } from "$types";
 
-  interface IconButtonProps {
+  type IconButtonProps = {
     info: IconButtonInfo;
   };
 
