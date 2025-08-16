@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
   import { IconButton } from "$components";
   import { Page } from "$enums";
   import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeIcon } from "$icons";
@@ -11,8 +11,8 @@
   let { page }: NavigationProps = $props();
 
   const pageOptions: Partial<Record<Page, IconButtonInfo>> = {
-    [Page.HOME]:       { icon: CatIcon,  target: "_self", href: `${base}/wonderland` },
-    [Page.WONDERLAND]: { icon: HomeIcon, target: "_self", href: `${base}/` },
+    [Page.HOME]:       { icon: CatIcon,  target: "_self", href: resolve("/wonderland") },
+    [Page.WONDERLAND]: { icon: HomeIcon, target: "_self", href: resolve("/") },
   };
 
   const currentOption: IconButtonInfo[] = pageOptions[page] ? [pageOptions[page]] : [];

@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
   import { Page } from "$enums";
 
   const page = Page.NOT_FOUND;
 
-  const href = `${base}/`;
+  const href = resolve("/");
 </script>
 
 <svelte:head>
