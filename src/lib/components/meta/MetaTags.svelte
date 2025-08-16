@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  {#each tags as { name, content } }
+  {#each tags as { name, content }}
     <meta {name} {content} />
   {/each}
 </svelte:head>
