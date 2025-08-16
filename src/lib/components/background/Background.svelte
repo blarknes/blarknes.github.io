@@ -1,7 +1,6 @@
 <script lang="ts">
   import { ImageLoader } from "$components";
   import { BackgroundLarge, BackgroundSmall } from "$images";
-  import type { ImageInfo } from "$types";
 
   const small = BackgroundSmall;
   const large = BackgroundLarge;

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
-  import { Page } from "$types";
+  import { Page } from "$enums";
 
   const page = Page.NOT_FOUND;
 

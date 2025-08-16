@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Navigation } from "$components";
-  import { Page } from "$types";
+  import { Page } from "$enums";
   import { TypeWriter } from "svelte-typewrite";
 
   type AfterDeleted = {

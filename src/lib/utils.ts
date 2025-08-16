@@ -1,5 +1,3 @@
-import type { ImageSrc } from "$types";
-
 /**
  * Delays the current thread by X amount of milisseconds.
  *

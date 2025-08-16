@@ -1,8 +1,7 @@
 <script lang="ts">
   import { ImageLoader, Navigation } from "$components";
+  import { Page } from "$enums";
   import { WhiteRabbitLarge, WhiteRabbitSmall } from "$images";
-  import type { ImageInfo } from "$types";
-  import { Page } from "$types";
 
   const page = Page.WONDERLAND;
 

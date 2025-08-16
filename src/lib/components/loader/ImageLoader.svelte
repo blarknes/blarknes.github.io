@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { ImageInfo } from "$types";
   import { load } from "$utils";
 
   type ImageLoaderProps = {

@@ -1,6 +1,4 @@
 <script lang="ts">
-  import type { IconButtonInfo } from "$types";
-
   type IconButtonProps = {
     info: IconButtonInfo;
   };

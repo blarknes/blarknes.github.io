@@ -1,9 +1,8 @@
 <script lang="ts">
   import { base } from "$app/paths";
   import { IconButton } from "$components";
-  import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeIcon, } from "$icons";
-  import type { IconButtonInfo } from "$types";
-  import { Page } from "$types";
+  import { Page } from "$enums";
+  import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeIcon } from "$icons";
 
   type NavigationProps = {
     page: Page;
