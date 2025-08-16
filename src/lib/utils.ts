@@ -5,7 +5,7 @@ import type { ImageSrc } from "$types";
  *
  * @param time the amount of milisseconds to be waited
  */
-export async function delay(time: number = 500) {
+export async function delay(time: number = 500): Promise<void> {
   await new Promise((resolve) => setTimeout(resolve, time));
 }
 

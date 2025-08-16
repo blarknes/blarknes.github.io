@@ -11,11 +11,11 @@
   const unit = "px";
   const duration = "1.2s";
 
-  function setup() {
+  function setup(): void {
     document.fonts.ready.then(fadeout);
   }
 
-  async function fadeout() {
+  async function fadeout(): Promise<void> {
     await delay();
     visible = false;
   }
