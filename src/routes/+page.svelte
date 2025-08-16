@@ -1,8 +1,11 @@
 <script lang="ts">
   import { Navigation } from "$components";
-  import type { AfterDeleted } from "$types";
   import { Page } from "$types";
   import { TypeWriter } from "svelte-typewrite";
+
+  type AfterDeleted = {
+    blink: number;
+  };
 
   const page = Page.HOME;
 

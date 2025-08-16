@@ -1,5 +1,8 @@
 <script lang="ts">
-  import type { MetaTag } from "$types";
+  type MetaTag = {
+    name: string;
+    content: string;
+  };
 
   const tags: MetaTag[] = [
     { name: "description", content: "Wonderland is waiting." },
