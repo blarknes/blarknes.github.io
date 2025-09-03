@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Navigation } from "$components";
+  import { Navigation, Title } from "$components";
   import { Page } from "$enums";
   import { TypeWriter } from "svelte-typewrite";
 
@@ -24,10 +24,7 @@
   };
 </script>
 
-<svelte:head>
-  <title>{page}</title>
-</svelte:head>
-
+<Title {page} />
 <Navigation {page} />
 
 <h1 class="bold">Hello! I am Vilas</h1>

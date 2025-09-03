@@ -5,6 +5,7 @@ import Loader from "./loader/Loader.svelte";
 import MetaTags from "./meta/MetaTags.svelte";
 import IconButton from "./navigation/IconButton.svelte";
 import Navigation from "./navigation/Navigation.svelte";
+import Title from "./navigation/Title.svelte";
 
 export {
   Background,
@@ -14,4 +15,5 @@ export {
   MetaTags,
   IconButton,
   Navigation,
+  Title,
 };

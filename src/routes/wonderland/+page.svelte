@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ImageLoader, Navigation } from "$components";
+  import { ImageLoader, Navigation, Title } from "$components";
   import { Page } from "$enums";
   import { WhiteRabbitLarge, WhiteRabbitSmall } from "$images";
 
@@ -12,10 +12,7 @@
   const image: ImageInfo = { small, large, alt };
 </script>
 
-<svelte:head>
-  <title>{page}</title>
-</svelte:head>
-
+<Title {page} />
 <Navigation {page} />
 
 <section>

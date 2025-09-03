@@ -1,5 +1,6 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
+  import { Title } from "$components";
   import { Page } from "$enums";
 
   const page = Page.NOT_FOUND;
@@ -7,9 +8,7 @@
   const href = resolve("/");
 </script>
 
-<svelte:head>
-  <title>{page}</title>
-</svelte:head>
+<Title {page} />
 
 <section>
   <h1 class="bold">404</h1>
