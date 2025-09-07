@@ -14,11 +14,11 @@ export async function delay(time: number = 500): Promise<void> {
  * @returns The loaded asset.
  */
 export async function load(src: string): Promise<ImageSrc> {
-  const data = await fetch(src);
-  const blob = await data.blob();
+  const data: Response = await fetch(src);
+  const blob: Blob = await data.blob();
 
-  const reader = new FileReader();
-  const image = await new Promise<ImageSrc>((resolve) => {
+  const reader: FileReader = new FileReader();
+  const image: ImageSrc = await new Promise<ImageSrc>((resolve) => {
     reader.onload = () => resolve(reader.result as string);
     reader.onerror = () => resolve(null);
 

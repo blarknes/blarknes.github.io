@@ -5,8 +5,8 @@
 
   let { info }: IconButtonProps = $props();
 
-  const target = info.target;
-  const href = info.href;
+  const target: string = info.target;
+  const href: string = info.href;
 </script>
 
 <a {href} {target}>

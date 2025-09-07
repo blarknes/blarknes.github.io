@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { load } from "$utils";
+  import { load } from "$functions/utility";
 
   type ImageLoaderProps = {
     image: ImageInfo;
@@ -7,9 +7,9 @@
 
   let { image }: ImageLoaderProps = $props();
 
-  const large = image.large;
-  const src = image.small;
-  const alt = image.alt;
+  const large: string = image.large;
+  const src: string = image.small;
+  const alt: string = image.alt;
 </script>
 
 {#await load(large)}

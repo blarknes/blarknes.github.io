@@ -1,15 +1,15 @@
 <script lang="ts">
-  import { delay } from "$utils";
+  import { delay } from "$functions/utility";
   import { onMount } from "svelte";
   import { RingLoader } from "svelte-loading-spinners";
   import { fade } from "svelte/transition";
 
-  let visible = $state(true);
+  let visible: boolean = $state(true);
 
-  const color = "#ebedf0";
-  const size = "40";
-  const unit = "px";
-  const duration = "1.2s";
+  const color: string = "#ebedf0";
+  const size: string = "40";
+  const unit: string = "px";
+  const duration: string = "1.2s";
 
   function setup(): void {
     document.fonts.ready.then(fadeout);

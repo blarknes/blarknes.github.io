@@ -1,5 +1,4 @@
 import Background from "./background/Background.svelte";
-import Fallback from "./fallback/Fallback.svelte";
 import ImageLoader from "./loader/ImageLoader.svelte";
 import Loader from "./loader/Loader.svelte";
 import MetaTags from "./meta/MetaTags.svelte";
@@ -9,7 +8,6 @@ import Title from "./navigation/Title.svelte";
 
 export {
   Background,
-  Fallback,
   ImageLoader,
   Loader,
   MetaTags,

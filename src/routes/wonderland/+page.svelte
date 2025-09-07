@@ -1,19 +1,12 @@
 <script lang="ts">
-  import { ImageLoader, Navigation, Title } from "$components";
-  import { Page } from "$enums";
+  import { ImageLoader } from "$components";
   import { WhiteRabbitLarge, WhiteRabbitSmall } from "$images";
 
-  const page = Page.WONDERLAND;
-
-  const small = WhiteRabbitSmall;
-  const large = WhiteRabbitLarge;
-  const alt = "white rabbit";
-
+  const small: string = WhiteRabbitSmall;
+  const large: string = WhiteRabbitLarge;
+  const alt: string = "white rabbit";
   const image: ImageInfo = { small, large, alt };
 </script>
-
-<Title {page} />
-<Navigation {page} />
 
 <section>
   <p>If <span class="italic accent">you</span> don't know</p>

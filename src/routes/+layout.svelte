@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { navigating } from "$app/state";
-  import { Background, Loader, MetaTags } from "$components";
+  import { page as state } from "$app/state";
+  import { Background, Loader, MetaTags, Navigation, Title } from "$components";
+  import { Page } from "$enums";
   import "$styles";
   import type { Snippet } from "svelte";
 
@@ -10,17 +11,20 @@
 
   let { children }: LayoutProps = $props();
 
-  let key = $derived(navigating.to);
+  let page: Page = $derived(state.data.page);
+  let key: Path = $derived(state.url);
 </script>
-
-<MetaTags />
-<Background />
 
 {#key key}
   <Loader />
 {/key}
 
+<Title {page} />
+<MetaTags />
+<Background />
+
 <main>
+  <Navigation {page} />
   {@render children()}
 </main>
 

@@ -1,15 +1,11 @@
 <script lang="ts">
-  import { Navigation, Title } from "$components";
-  import { Page } from "$enums";
   import { TypeWriter } from "svelte-typewrite";
 
   type AfterDeleted = {
     blink: number;
   };
 
-  const page = Page.HOME;
-
-  const texts = [
+  const texts: string[] = [
     " a developer",
     " the villain",
     " nonchalant",
@@ -23,9 +19,6 @@
     blink: 2,
   };
 </script>
-
-<Title {page} />
-<Navigation {page} />
 
 <h1 class="bold">Hello! I am Vilas</h1>
 <p>I am <TypeWriter {texts} {afterDeleted} /></p>

@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { resolve } from "$app/paths";
   import { IconButton } from "$components";
   import { Page } from "$enums";
-  import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeIcon } from "$icons";
+  import { getNavigationItems } from "$functions/route";
 
   type NavigationProps = {
     page: Page;
@@ -10,27 +9,17 @@
 
   let { page }: NavigationProps = $props();
 
-  const pageOptions: Partial<Record<Page, IconButtonInfo>> = {
-    [Page.HOME]:       { icon: CatIcon,  target: "_self", href: resolve("/wonderland") },
-    [Page.WONDERLAND]: { icon: HomeIcon, target: "_self", href: resolve("/") },
-  };
-
-  const currentOption: IconButtonInfo[] = pageOptions[page] ? [pageOptions[page]] : [];
-
-  const options: IconButtonInfo[] = [
-    { icon: LinkedInIcon,   target: "_blank", href: "https://www.linkedin.com/in/blarknes" },
-    { icon: GitHubIcon,     target: "_blank", href: "https://github.com/blarknes" },
-    ...currentOption,
-    { icon: HackTheBoxIcon, target: "_blank", href: "https://app.hackthebox.com/profile/1419398" },
-    { icon: TryHackMeIcon,  target: "_blank", href: "https://tryhackme.com/p/blarknes" },
-  ];
+  let items: IconButtonInfo[] = $derived(getNavigationItems(page));
+  let visible: boolean = $derived(items.length > 0);
 </script>
 
-<nav>
-  {#each options as info}
-    <IconButton {info} />
-  {/each}
-</nav>
+{#if visible}
+  <nav>
+    {#each items as info}
+      <IconButton {info} />
+    {/each}
+  </nav>
+{/if}
 
 <style lang="scss">
   nav {

@@ -2,10 +2,9 @@
   import { ImageLoader } from "$components";
   import { BackgroundLarge, BackgroundSmall } from "$images";
 
-  const small = BackgroundSmall;
-  const large = BackgroundLarge;
-  const alt = "background";
-
+  const small: string = BackgroundSmall;
+  const large: string = BackgroundLarge;
+  const alt: string = "background";
   const image: ImageInfo = { small, large, alt };
 </script>
 
