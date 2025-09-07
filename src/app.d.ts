@@ -7,6 +7,11 @@ import type { Component } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 
 declare global {
+  // layout
+  type LayoutInfo = {
+    page: Page;
+  }
+
   // route
   type Path = URL & {
     pathname: ResolvedPath

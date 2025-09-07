@@ -8,7 +8,9 @@ export const trailingSlash: string = "never";
  * Sets the initial app page on the root layout.
  */
 export const load: LayoutLoad = async () => {
-  return {
+  const info: LayoutInfo = {
     page: Page.HOME,
   };
+
+  return info;
 };
