@@ -1,1 +1,0 @@
-import{b as o,r as t}from"./Db5wjgnT.js";import"./DsnmJJEf.js";import{aN as a,T as n,aO as s}from"./CqNs4T31.js";function l(r,e){return o+t(r,e)}var m=(r=>(r.HOME="home",r.WONDERLAND="wonderland",r.NOT_FOUND="not found",r))(m||{});function p(r,e){a(f=>{n(()=>s.title=e.page)})}export{m as P,p as T,l as r};
