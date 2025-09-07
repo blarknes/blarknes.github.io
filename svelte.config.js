@@ -11,11 +11,11 @@ const config = {
     adapter: adapter(),
     alias: {
       $components: "src/lib/components/index",
+      $functions: "src/lib/functions",
       $images: "src/lib/images/index",
       $styles: "src/lib/styles/styles.scss",
       $enums: "src/lib/enums",
       $icons: "src/lib/icons",
-      $utils: "src/lib/utils",
     },
   },
 };
