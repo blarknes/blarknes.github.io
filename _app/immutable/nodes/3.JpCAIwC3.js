@@ -1,0 +1,1 @@
+import{P as o}from"../chunks/BQfHvyj9.js";import{L as s}from"../chunks/C0GOZx6Z.js";const e=async()=>({page:o.WONDERLAND}),r=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{s as component,r as universal};
