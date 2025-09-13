@@ -4,7 +4,7 @@
   import { RingLoader } from "svelte-loading-spinners";
   import { fade } from "svelte/transition";
 
-  let visible: boolean = $state(true);
+  let loading: boolean = $state(true);
 
   const color: string = "#ebedf0";
   const size: string = "40";
@@ -17,13 +17,13 @@
 
   async function fadeout(): Promise<void> {
     await delay();
-    visible = false;
+    loading = false;
   }
 
   onMount(setup);
 </script>
 
-{#if visible}
+{#if loading}
   <section transition:fade={{ duration: 600 }}>
     <RingLoader {color} {size} {unit} {duration}  />
   </section>
