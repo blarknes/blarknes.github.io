@@ -1,1 +1,0 @@
-import"../chunks/DsnmJJEf.js";import"../chunks/6v5NFKfZ.js";import{o as p}from"../chunks/BnyPHdLj.js";import{p as m,a as i}from"../chunks/fhlmuC07.js";import{i as s}from"../chunks/CjbtMNZr.js";import{g as n}from"../chunks/DZFQ8IId.js";import{r as a}from"../chunks/CASrgFW6.js";function v(f,o){m(o,!1);function r(){const t=a("/404");n(t)}p(r),s(),i()}export{v as component};

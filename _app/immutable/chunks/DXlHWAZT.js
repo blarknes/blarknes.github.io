@@ -1,1 +1,0 @@
-import{H as t,I as S,J as b,f as h,S as k}from"./fhlmuC07.js";function u(r,f){return r===f||r?.[k]===f}function d(r={},f,a,T){return t(()=>{var i,s;return S(()=>{i=s,s=[],h(()=>{r!==a(...s)&&(f(r,...s),i&&u(a(...i),r)&&f(null,...i))})}),()=>{b(()=>{s&&u(a(...s),r)&&f(null,...s)})}}),r}export{d as b};
